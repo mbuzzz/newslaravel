@@ -6,7 +6,8 @@ Portal berita/edukasi berbasis Laravel 12 + Filament 3.
 2) `composer install`  
 3) `cp .env.example .env` lalu set DB dan `php artisan key:generate`  
 4) `php artisan migrate --seed`  
-5) `npm install && npm run dev` kemudian `php artisan serve` (akses `http://localhost:8000`)
+5) `php artisan shield:generate` (sinkron hak akses Filament)  
+6) `npm install && npm run dev` kemudian `php artisan serve` (akses `http://localhost:8000`)
 
 ## Stack
 - Laravel 12, PHP 8.2+
@@ -36,6 +37,7 @@ Portal berita/edukasi berbasis Laravel 12 + Filament 3.
 - Generate key: `php artisan key:generate`.
 - Migrasi + seeder: `php artisan migrate --seed`.
 - Link storage: `php artisan storage:link`.
+- Hak akses (Filament Shield): `php artisan shield:generate` jalankan setiap kali menambah resource/page/widget Filament agar permission/policy tersinkron.
 - Frontend: `npm install && npm run dev` (pakai `npm run build` untuk produksi).
 - Jalankan: `php artisan serve`.
 
