@@ -1,0 +1,170 @@
+/* :: 6.6.0 Sidenav */
+
+.sidenav-wrapper {
+    transition-duration: 500ms;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    background-color: $gray;
+    overflow-y: auto;
+    width: 240px;
+
+    .go-home-btn {
+        transition-duration: 400ms;
+        position: fixed;
+        bottom: 30px;
+        left: 170px;
+        background-color: $hover;
+        width: 35px;
+        height: 35px;
+        border-radius: 25rem;
+        text-align: center;
+        color: $white;
+        line-height: 37px;
+        z-index: 10;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+        font-size: 1.25rem;
+
+        &:hover,
+        &:focus {
+            background-color: $heading;
+        }
+    }
+
+    &.nav-active {
+        left: 0;
+
+        .go-home-btn {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &.filter-nav {
+        background: $gray;
+    }
+}
+
+.time-date-weather-wrapper {
+    position: relative;
+    z-index: 1;
+    background-position: center center;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        background: -webkit-linear-gradient(top, rgba(220, 235, 253, 0.1) 0%, rgba(220, 235, 253, 0.5) 50%, #dcebfd 100%);
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 235, 253, 0.1)), color-stop(50%, rgba(220, 235, 253, 0.5)), color-stop(100%, #dcebfd));
+        background: -o-linear-gradient(top, rgba(220, 235, 253, 0.1) 0%, rgba(220, 235, 253, 0.5) 50%, #dcebfd 100%);
+        background: linear-gradient(to bottom, rgba(220, 235, 253, 0.1) 0%, rgba(220, 235, 253, 0.5) 50%, #dcebfd 100%);
+    }
+
+    .weather-update {
+        .icon {
+            font-size: 3rem;
+            color: $white;
+        }
+
+        h4 {
+            color: $white;
+        }
+
+        p {
+            color: $heading;
+        }
+    }
+
+    .time-date {
+        #dashboardDate {
+            color: $heading;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .running-time {
+            color: $heading;
+            font-size: 2rem;
+            font-weight: 400;
+
+            span {
+                padding: 0 2px;
+            }
+        }
+    }
+}
+
+.sidenav-black-overlay {
+    transition-duration: 500ms;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(2, 3, 16, 0.7);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.sidenav-nav {
+    margin: 2rem 1rem;
+    position: relative;
+    z-index: 1;
+
+    li {
+        a {
+            display: flex;
+            align-items: center;
+            color: $heading;
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+            font-size: 14px;
+            font-weight: 500;
+
+            i {
+                text-decoration: 500ms;
+                display: inline-block;
+                margin-right: 0.5rem;
+                font-size: 1.25rem;
+                color: $text;
+            }
+
+            .red-circle {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: $primary;
+            }
+
+            &:hover,
+            &:focus {
+                color: $primary;
+                font-weight: 500;
+            }
+        }
+
+        &:last-child {
+            a {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

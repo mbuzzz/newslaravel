@@ -1,0 +1,120 @@
+/* :: 6.17.0 Profile */
+
+.profile-content-wrapper {
+    position: relative;
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    @include bg-gradient;
+}
+
+.profile-settings-option a {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    background-color: $white;
+    border-radius: 50%;
+    z-index: 99;
+    box-shadow: 0 1px 16px 0 rgba(16, 13, 209, 0.175);
+
+    i {
+        line-height: 32px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $blue;
+        color: $white;
+    }
+}
+
+.user-meta-data {
+    position: relative;
+    z-index: 1;
+
+    .user-thumbnail {
+        position: relative;
+        z-index: 1;
+        flex: 0 0 100px;
+        max-width: 100px;
+        width: 100px;
+
+        img {
+            border-radius: 1rem;
+        }
+    }
+
+    .user-content {
+        flex: 0 0 calc(100% - 100px);
+        max-width: calc(100% - 100px);
+        width: calc(100% - 100px);
+        padding-left: 1rem;
+
+        >p {
+            background-color: $primary;
+            padding: 0.125rem 0.5rem 0.1rem;
+            border-radius: 4px;
+            font-size: 12px;
+            color: $white;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        .user-meta-data {
+            p {
+                margin-bottom: 0;
+                text-transform: uppercase;
+                line-height: 1;
+
+                span {
+                    display: block;
+                    font-size: 10px;
+                    font-weight: 400;
+                    color: $text;
+
+                    &.counter {
+                        font-size: 18px;
+                        margin-bottom: 0.375rem;
+                        font-weight: 700;
+                        color: $heading;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.my-visitors-wrapper {
+    position: relative;
+    z-index: 1;
+    padding-top: 28px;
+    padding-bottom: 30px;
+}
+
+.user-total-count-chart {
+    position: relative;
+    z-index: 1;
+    background-color: $gray;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem 0.5rem 0.5rem;
+}
+
+.traffic-source-wrapper {
+    position: relative;
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.traffic-source-chart {
+    position: relative;
+    z-index: 1;
+    background-color: $gray;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem 1rem 0.5rem;
+}

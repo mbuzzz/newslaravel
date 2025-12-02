@@ -1,0 +1,99 @@
+/* -------------------------------------
+[Master Stylesheet]
+
+Template Name: News10 - Blog & Magazine Mobile HTML Template
+Template Author: Designing World
+Template Author URL: https://themeforest.net/user/designing-world/portfolio
+Version: 2.0.1
+Last Updated: Jan 28, 2025
+Created: April 5, 2020
+------------------------------------- */
+
+/* -------------------------------------
+[Table of Contents]
+    1.0 Google Fonts
+    2.0 Include Third Party CSS Library
+        2.1.0 Bootstrap CSS
+        2.2.0 Animate CSS
+        2.3.0 Owl Carousel CSS
+        2.4.0 Animated Headline CSS
+        2.5.0 Font Awesome CSS
+        2.6.0 Line Icon CSS
+        2.7.0 Apex Charts CSS
+    3.0 Template Mixins
+        3.1.0 Flex
+        3.2.0 Miscellaneous        
+    4.0 Template Variables
+    5.0 Template Responsive
+    6.0 Main Styles
+        6.1.0 Reboot CSS
+        6.2.0 Shortcode CSS
+        6.3.0 Preloader CSS
+        6.4.0 Demo CSS
+        6.5.0 Header CSS
+        6.6.0 Sidenav CSS
+        6.7.0 Random CSS
+        6.8.0 Hero CSS
+        6.9.0 Footer CSS
+        6.10.0 Search CSS
+        6.11.0 Register CSS
+        6.12.0 Contact CSS
+        6.13.0 Blog CSS
+        6.14.0 Editorial CSS
+        6.15.0 Catagory CSS
+        6.16.0 Blog Details CSS
+        6.17.0 Profile CSS
+        6.18.0 Comment CSS
+        6.19.0 Live CSS
+        6.20.0 Tags CSS
+        6.21.0 Element CSS
+        6.22.0 Settings CSS
+        6.23.0 Dark CSS
+
+# [font-family]
+'DM', sans-serif;
+------------------------------------- */
+
+/* Import Fonts & CSS Files */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+
+@import url(css/bootstrap.min.css);
+@import url(css/tabler-icons.min.css);
+@import url(css/animate.css);
+@import url(css/owl.carousel.min.css);
+@import url(css/jquery.animatedheadline.css);
+@import url(css/apexcharts.css);
+
+// Template Mixin
+@import "_miscellaneous.scss";
+
+// Template Variables
+@import "_variables.scss";
+
+// Template Responsive
+@import "_responsive.scss";
+
+// Template Main CSS
+@import "_reboot.scss";
+@import "_shortcode.scss";
+@import "_preloader.scss";
+@import "_demo.scss";
+@import "_header.scss";
+@import "_sidenav.scss";
+@import "_random.scss";
+@import "_hero.scss";
+@import "_footer.scss";
+@import "_search.scss";
+@import "_register.scss";
+@import "_contact.scss";
+@import "_blog.scss";
+@import "_editorial.scss";
+@import "_catagory.scss";
+@import "_blog-details.scss";
+@import "_profile.scss";
+@import "_comment.scss";
+@import "_live.scss";
+@import "_tags.scss";
+@import "_element.scss";
+@import "_setting.scss";
+@import "_dark.scss";

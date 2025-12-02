@@ -1,0 +1,39 @@
+/* :: 6.19.0 Live */
+
+.live-video-url {
+    position: relative;
+    z-index: 1;
+}
+
+.live-video-info {
+    position: relative;
+    z-index: 1;
+    @include bg-gradient;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .viwer-count {
+        font-size: 14px;
+    }
+
+    .video-time {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        span {
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background-color: $purple;
+            display: inline-block;
+        }
+    }
+}
+
+.live-video-description {
+	position: relative;
+	z-index: 1;
+	padding-top: 26px;
+	padding-bottom: 11px;
+}

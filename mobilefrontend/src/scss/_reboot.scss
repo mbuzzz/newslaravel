@@ -1,0 +1,224 @@
+/* :: 6.1.0 Reboot */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family: $fonts;
+    color: $text;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $heading;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+}
+
+h6 {
+    letter-spacing: 0px;
+}
+
+p {
+    color: $text;
+    font-size: 1rem;
+}
+
+a,
+a:hover,
+a:focus {
+    transition-duration: 500ms;
+    text-decoration: none;
+    outline: 0 solid transparent;
+    box-shadow: none;
+    color: $heading;
+    font-weight: 500;
+}
+
+.btn {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+
+    li {
+        list-style: none;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            list-style: none;
+            text-decoration: none;
+        }
+    }
+}
+
+ol {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section Padding */
+
+.section-padding-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-padding-0-30 {
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+.section-padding-30-0 {
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+.section-padding-30-14 {
+    padding-top: 30px;
+    padding-bottom: 14px;
+}
+
+/* Scrollup */
+
+#scrollUp {
+    bottom: 30px;
+    font-size: 16px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: $white;
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+    transition-duration: 500ms;
+    border-radius: 6px;
+    background-color: $heading;
+
+    &:hover,
+    &:focus {
+        background-color: $primary;
+    }
+}
+
+.jarallax {
+    position: relative;
+    z-index: 0;
+
+    .jarallax-img {
+        position: absolute;
+        object-fit: cover;
+        font-family: 'object-fit: cover;';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+input:required,
+textarea:required {
+    box-shadow: none !important;
+}
+
+input:invalid,
+textarea:invalid {
+    box-shadow: none !important;
+}
+
+.no-boxshadow {
+    box-shadow: none !important;
+}
+
+.badge {
+    font-weight: 500;
+    border-radius: 2rem;
+}
+
+.container {
+    @media #{$breakpoint-xl} {
+        max-width: 620px;
+    }
+
+    @media #{$breakpoint-lg} {
+        max-width: 520px;
+    }
+
+    @media #{$breakpoint-md} {
+        max-width: 520px;
+    }
+
+    @media #{$breakpoint-xs} {
+        max-width: 420px;
+    }
+}
+
+.demo-container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+
+    @media #{$breakpoint-xl} {
+        max-width: 1140px;
+    }
+
+    @media #{$breakpoint-lg} {
+        max-width: 960px;
+    }
+
+    @media #{$breakpoint-md} {
+        max-width: 720px;
+    }
+
+    @media #{$breakpoint-xs} {
+        max-width: 100%;
+    }
+
+    @media #{$breakpoint-sm} {
+        max-width: 540px;
+    }
+}
+
+.home-page-toast {
+	position: fixed;
+	width: 250px;
+	z-index: 2000;
+	right: 16px;
+	top: 66px;
+	background-color: $white;
+	border-color: $border;
+
+    .btn-close {
+        top: .75rem;
+        right: .75rem;
+        z-index: 100;
+    }
+
+    &:not(.show) {
+        display: none !important;
+    }
+}

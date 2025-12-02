@@ -1,0 +1,110 @@
+/* :: 6.5.0 Header */
+
+.header-area {
+    transition-duration: 500ms;
+    background-color: $white;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(116, 119, 148, 0.175);
+}
+
+.search-form {
+    position: relative;
+    z-index: 1;
+
+    a {
+        display: block;
+        width: 28px;
+        height: 28px;
+        background-color: $gray;
+        border-radius: 6px;
+        text-align: center;
+        color: $text;
+
+        i {
+            line-height: 28px;
+            font-size: 1rem;
+        }
+    }
+}
+
+.navbar--toggler {
+    position: relative;
+    z-index: 1;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+
+    span {
+        position: absolute;
+        z-index: 15;
+        transition-duration: 500ms;
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+        border: 2px solid $text;
+        border-radius: 10px;
+
+        &:nth-child(1) {
+            top: 2px;
+            left: 2px;
+        }
+
+        &:nth-child(2) {
+            top: 2px;
+            right: 2px;
+        }
+
+        &:nth-child(3) {
+            bottom: 2px;
+            left: 2px;
+        }
+
+        &:nth-child(4) {
+            bottom: 2px;
+            right: 2px;
+        }
+    }
+}
+
+.back-button {
+    a {
+        color: $text;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        background-color: #fff3f0;
+        border-radius: 6px;
+        color: #797494;
+
+        i {
+            font-size: 1.125rem;
+        }
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+}
+
+.page-heading h6 {
+    color: $text;
+}
+
+.logo-wrapper {
+    a {
+        display: block;
+
+        img {
+            max-height: 24px;
+        }
+    }
+}

@@ -1,0 +1,495 @@
+/* :: 6.23.0 Night Mode */
+[data-theme="dark"] {
+    background-color: $dark-primary;
+
+    body {
+        background-color: $dark-primary;
+    }
+
+    p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    #preloader {
+        background-color: $dark-primary;
+    }
+
+    a,
+    a:hover,
+    a:focus {
+        color: $white;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .header-area {
+        background-color: $dark-primary;
+        box-shadow: 0 3px 12px rgba(255, 255, 255, 0.175);
+    }
+
+    .footer-nav-area {
+        background-color: $dark-primary;
+        box-shadow: 0 -3px 12px rgba(255, 255, 255, 0.175);
+    }
+
+    .card {
+        border-color: $dark-sec;
+        background-color: $dark-sec;
+    }
+
+    .newsten-footer-nav ul li a {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .newsten-footer-nav ul li.active a {
+        color: $yellow;
+    }
+
+    .newsten-footer-nav ul li a:hover,
+    .newsten-footer-nav ul li a:focus {
+        color: $yellow;
+    }
+
+    .top-search-form form .form-control {
+        background-color: transparent;
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-warning {
+
+        &:hover,
+        &:focus {
+            color: $white;
+            background-color: #282958;
+            border-color: #282958;
+        }
+    }
+
+    .btn-danger {
+
+        &:hover,
+        &:focus {
+            background-color: #282958;
+            border-color: #282958;
+            color: $white;
+        }
+    }
+
+    .btn-primary {
+
+        &:hover,
+        &:focus {
+            background-color: #282958;
+            border-color: #282958;
+            color: $white;
+        }
+    }
+
+    .btn-success {
+
+        &:hover,
+        &:focus {
+            background-color: #282958;
+            border-color: #282958;
+            color: $white;
+        }
+    }
+
+    .btn-info {
+
+        &:hover,
+        &:focus {
+            background-color: #282958;
+            border-color: #282958;
+            color: $white;
+        }
+    }
+
+    .page-nav li a {
+        background-color: #332858;
+        color: $white;
+    }
+
+    .page-nav li a:hover,
+    .page-nav li a:focus {
+        color: $yellow;
+    }
+
+    .back-button a {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: $white;
+    }
+
+    .back-button a:hover,
+    .back-button a:focus {
+        color: $yellow;
+    }
+
+    .single-blog-info .post-like-wrap {
+        background-color: $dark-sec;
+    }
+
+    .single-settings {
+        .button.r {
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .data-content a {
+
+            &:hover,
+            &:focus {
+                color: $yellow;
+            }
+        }
+    }
+
+    .search-form a {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .top-catagories-wrapper .catagory-title {
+        color: $heading;
+    }
+
+    .catagory-card {
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    .single-trending-post {
+        background-color: #282958;
+        border-color: #282958;
+
+        .post-content .post-title {
+
+            &:hover,
+            &:focus {
+                color: $yellow;
+            }
+        }
+    }
+
+    .tabs-news-wrapper.bg-gray {
+        background-color: #282958 !important;
+    }
+
+    .tabs-news-wrapper .nav-tabs {
+        background-color: transparent;
+        box-shadow: 0 1px 18px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .single-news-post {
+        background-color: $dark-primary;
+
+        .post-content .post-title {
+
+            &:hover,
+            &:focus {
+                color: $yellow;
+            }
+        }
+    }
+
+    .single-news-post.bg-gray {
+        background-color: #282958 !important;
+
+        .post-content .post-title {
+
+            &:hover,
+            &:focus {
+                color: $yellow;
+            }
+        }
+    }
+
+    .single-blog-info .post-catagory {
+
+        &:hover,
+        &:focus {
+            background-color: #282958;
+        }
+    }
+
+    .modal-content {
+        background-color: #282958;
+    }
+
+    .user-meta-data .user-content {
+        h6 {
+            color: $heading;
+        }
+    }
+
+    .profile-settings-option a {
+        color: $heading;
+
+        &:hover,
+        &:focus {
+            color: $white;
+        }
+    }
+
+    .border,
+    .border-left,
+    .border-right,
+    .border-bottom,
+    .border-top {
+        border-color: rgba(255, 255, 255, 0.175) !important;
+    }
+
+    .children-comments-list {
+        border-left-color: rgba(255, 255, 255, 0.175);
+    }
+
+    #scrollIndicator {
+        background-color: $yellow;
+    }
+
+    .newsten-footer-nav ul li a::after {
+        background-color: $yellow;
+    }
+
+    .single-comment-wrap .comment-meta .like-count a {
+        color: $yellow;
+        border-color: rgba(255, 255, 255, 0.175);
+
+        &:hover,
+        &:focus {
+            color: $white;
+            border-color: $purple;
+            background-color: $purple;
+        }
+    }
+
+    .video-title {
+        color: $heading;
+    }
+
+    .search-post-wrapper h4 {
+        color: $heading;
+    }
+
+    .search-page-form .search-via-voice {
+        color: $heading;
+    }
+
+    .single-recommended-post .bookmark-customize-option .dropdown-menu {
+        background-color: $dark-primary;
+    }
+
+    .single-recommended-post .bookmark-customize-option .dropdown-menu .dropdown-item {
+
+        &:hover,
+        &:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    .comment-sorting-option .btn {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: $white;
+    }
+
+    .comment-sorting-option .dropdown-menu {
+        border-color: transparent;
+        background-color: #282958;
+    }
+
+    .comment-sorting-option .dropdown-menu .dropdown-item {
+        color: rgba(255, 255, 255, 0.7);
+
+        &:hover,
+        &:focus {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    .comment-form textarea {
+        background-color: $dark-sec;
+        color: $white;
+        border-color: rgba(255, 255, 255, 0.1);
+
+        &:focus,
+        &:focus-visible {
+            box-shadow: none;
+            outline: 0;
+        }
+    }
+
+    .change-password-card .form-control {
+        color: $white;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-color: transparent;
+
+        &:focus,
+        &:focus-visible {
+            border-color: $yellow;
+            outline: 0;
+        }
+    }
+
+    .login-wrapper {
+        background-color: $dark-primary;
+    }
+
+    .login-wrapper .login-shape2 img {
+        opacity: 0.15;
+    }
+
+    .login-wrapper .login-shape img {
+        opacity: 0.15;
+    }
+
+    .register-form .form-control {
+        border-color: rgba(255, 255, 255, 0.175);
+        background-color: rgba(255, 255, 255, 0.175);
+        color: $white;
+
+        &:focus {
+            border-color: $yellow;
+        }
+    }
+
+    .register-form form>.form-group>label {
+        color: $yellow;
+    }
+
+    .login-meta-data a {
+
+        &:hover,
+        &:focus {
+            color: $yellow;
+        }
+    }
+
+    .single-settings .title i {
+        color: $white;
+    }
+
+    .form-control {
+        border-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.1);
+        color: $white;
+    }
+
+    .accordion .card .btn {
+        color: $white;
+    }
+
+    .custom-select option {
+        background-color: $dark-primary;
+    }
+
+    .list-unstyled {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .modal-header {
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .modal-footer {
+        border-top-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .close {
+        color: $white;
+    }
+
+    .pagination .page-link {
+        color: $white;
+        border-color: #282958;
+        background-color: #282958;
+
+        &:hover,
+        &:focus {
+            color: $yellow;
+        }
+    }
+
+    .search-page-form form input {
+        background-color: $white;
+        color: $heading;
+    }
+
+    .sidenav-wrapper {
+        background-color: $dark-primary;
+    }
+
+    .time-date-weather-wrapper::before {
+        background: -webkit-linear-gradient(top, rgba(12, 21, 59, 0.25) 0%, rgba(12, 21, 59, 0.75) 50%, #0c153b 100%);
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 21, 59, 0.25)), color-stop(50%, rgba(12, 21, 59, 0.75)), color-stop(100%, #0c153b));
+        background: -o-linear-gradient(top, rgba(12, 21, 59, 0.25) 0%, rgba(12, 21, 59, 0.75) 50%, #0c153b 100%);
+        background: linear-gradient(to bottom, rgba(12, 21, 59, 0.25) 0%, rgba(12, 21, 59, 0.75) 50%, #0c153b 100%);
+    }
+
+    .time-date-weather-wrapper .weather-update p {
+        color: $white;
+    }
+
+    .time-date-weather-wrapper .time-date #dashboardDate,
+    .time-date-weather-wrapper .time-date .running-time {
+        color: $yellow;
+    }
+
+    .sidenav-nav li a {
+        color: rgba(255, 255, 255, 0.7);
+
+        &:hover,
+        &:focus {
+            color: $yellow;
+        }
+    }
+
+    .single-blog-info {
+        background-color: $dark-primary;
+    }
+
+    .alert-dismissible {
+        .close {
+            color: $heading;
+        }
+    }
+
+    .preview-hero-area {
+        background-color: $dark-sec;
+    }
+
+    .demo-header {
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .features-area ul li.active {
+        color: $white;
+    }
+
+    .change-password-card span {
+        color: $white;
+    }
+
+    .form-control::placeholder {
+        color: $white;
+        opacity: 0.5;
+    }
+
+    .single-settings .title {
+        color: $white;
+    }
+
+    .home-page-toast {
+        background-color: #0C153B;
+        border-color: #242644;
+
+        .btn-close {
+            --bs-btn-close-color: #fff;
+            --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+        }
+    }
+}

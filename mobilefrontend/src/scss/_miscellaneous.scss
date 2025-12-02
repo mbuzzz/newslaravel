@@ -1,0 +1,5 @@
+@mixin bg-gradient {
+    background: #ffffcc;
+    background: -webkit-linear-gradient(to right, #fff2cc, #ffffcc);
+    background: linear-gradient(to right, #fff2cc, #ffffcc);
+}

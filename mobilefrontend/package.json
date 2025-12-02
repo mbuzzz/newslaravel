@@ -1,0 +1,32 @@
+{
+  "name": "newsten-blog-and-magazine-mobile-html-template",
+  "version": "2.0.0",
+  "description": "Newsten - Blog & Magazine Mobile HTML Template",
+  "main": "active.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "author": "designing-world",
+  "license": "ThemeForest-License",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "browserslist": "^4.23.3",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.1.0",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.41",
+    "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "@tabler/icons-webfont": "^3.12.0",
+    "bootstrap": "^5.3.3",
+    "counterup": "^1.0.2",
+    "jarallax": "^2.2.1",
+    "jquery": "^2.2.4",
+    "jquery-animated-headlines": "^1.0.0",
+    "jquery-waypoints": "^2.0.5",
+    "jquery.easing": "^1.4.1",
+    "owl.carousel2": "^2.2.2",
+    "wowjs": "^1.1.3"
+  }
+}

@@ -1,0 +1,145 @@
+/* :: 6.21.0 Element */
+
+.element-wrapper {
+    position: relative;
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.newsten-owl-carousel-slides {
+    position: relative;
+    z-index: 1;
+
+    .owl-prev {
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        left: 15px;
+        width: 30px;
+        height: 30px;
+        background-color: $primary;
+        color: $white;
+        text-align: center;
+        border-radius: 0.125rem;
+
+        i {
+            line-height: 30px;
+        }
+    }
+
+    .owl-next {
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        background-color: $primary;
+        color: $white;
+        text-align: center;
+        border-radius: 0.125rem;
+
+        i {
+            line-height: 30px;
+        }
+    }
+
+    .owl-dots {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        bottom: 15px;
+
+        .owl-dot {
+            width: 8px;
+            height: 8px;
+            background-color: $white;
+            border-radius: 50%;
+            margin: 0 3px;
+
+            &.active {
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+.newsten-media {
+    position: relative;
+    z-index: 1;
+
+    img {
+        flex: 0 0 70px;
+        max-width: 70px;
+        width: 70px;
+    }
+}
+
+.list-unstyled {
+    padding: 0.375rem 0.5rem;
+    border: 2px solid $border;
+}
+
+.pagination {
+    .page-link {
+        color: $heading;
+        border: 1px solid $border;
+
+        &:hover,
+        &:focus {
+            background-color: $gray;
+            box-shadow: none;
+            color: $blue;
+        }
+    }
+
+    .page-item.active .page-link {
+        background-color: $blue;
+        border-color: $blue;
+        color: $white;
+    }
+}
+
+.progress {
+    background-color: $gray;
+    border-radius: 5rem;
+}
+
+.alert {
+    font-size: 14px;
+}
+
+.modal-open {
+    padding-right: 0 !important;
+
+    .modal {
+        padding-right: 0 !important;
+    }
+}
+
+.post-share-modal {
+    .close {
+        border: 1px solid $border;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        font-size: 14px;
+
+        i {
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+
+    h6 {
+        font-size: 14px;
+        margin-top: 0.25rem;
+    }
+}
+
+.modal-content {
+    border: 0;
+    border-radius: 0.5rem;
+}

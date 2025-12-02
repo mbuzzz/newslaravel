@@ -1,0 +1,223 @@
+/* :: 6.15.0 Catagory */
+
+.top-catagories-wrapper {
+    position: relative;
+    z-index: 1;
+    @include bg-gradient;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+
+    .catagory-title {
+        position: absolute;
+        top: 45%;
+        left: -1.25rem;
+        z-index: 10;
+        transform: rotate(-90deg) translateY(-50%);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .bg-shapes {
+        .shape1 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border: 1px solid $yellow;
+            border-radius: 50%;
+            top: -200px;
+            left: -130px;
+            z-index: -1;
+        }
+
+        .shape2 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border: 1px solid $yellow;
+            border-radius: 50%;
+            top: -230px;
+            left: -130px;
+            z-index: -1;
+        }
+
+        .shape3 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border: 1px solid $yellow;
+            border-radius: 50%;
+            top: -260px;
+            left: -130px;
+            z-index: -1;
+        }
+
+        .shape4 {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border: 1px solid $yellow;
+            border-radius: 40%;
+            bottom: -150px;
+            right: -140px;
+            z-index: -1;
+        }
+
+        .shape5 {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border: 1px solid $yellow;
+            border-radius: 30%;
+            bottom: -175px;
+            right: -150px;
+            z-index: -1;
+        }
+    }
+}
+
+.catagory-card {
+    position: relative;
+    z-index: 1;
+    border-radius: 1rem;
+    background-color: transparent;
+
+    a {
+        position: relative;
+        border-radius: 1rem;
+        display: block;
+        z-index: 1;
+        overflow: hidden;
+
+        &::after {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            content: "";
+            background-color: $dark-primary;
+            opacity: 0.4;
+            border-radius: 1rem;
+        }
+
+        img {
+            transition-duration: 500ms;
+            border-radius: 1rem;
+            position: relative;
+            z-index: -5;
+        }
+
+        h6 {
+            transition-duration: 500ms;
+            font-size: 12px;
+            margin-bottom: 0;
+            position: absolute;
+            left: 0.5rem;
+            bottom: 0.5rem;
+            z-index: 100;
+            color: $white;
+            background-color: $primary;
+            padding: 0.25rem 0.625rem;
+            border-radius: 2rem;
+
+            &:hover,
+            &:focus {
+                background-color: $heading;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.catagory-slides {
+    width: calc(100% + 3rem);
+    margin-left: 3rem;
+
+    @media #{$breakpoint-xl} {
+        margin-left: 0;
+    }
+
+    @media #{$breakpoint-lg} {
+        margin-left: 0;
+    }
+
+    @media #{$breakpoint-md} {
+        margin-left: 0;
+    }
+
+    @media #{$breakpoint-sm} {
+        margin-left: 0;
+    }
+
+    .owl-stage {
+        .owl-item:nth-child(3n+1) {
+            .catagory-card {
+                a {
+                    &::after {
+                        background-color: $blue;
+                    }
+
+                    h6 {
+                        background-color: $purple;
+
+                        &:hover,
+                        &:focus {
+                            background-color: $heading;
+                        }
+                    }
+                }
+            }
+        }
+
+        .owl-item:nth-child(3n+0) {
+            .catagory-card {
+                a {
+                    &::after {
+                        background-color: $purple;
+                    }
+
+                    h6 {
+                        background-color: $yellow;
+                        color: $heading;
+
+                        &:hover,
+                        &:focus {
+                            background-color: $heading;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.all-catagory-wrapper {
+    position: relative;
+    z-index: 1;
+    padding-top: 28px;
+    padding-bottom: 14px;
+
+    .catagory-card {
+        a h6 {
+            left: 1rem;
+            bottom: 1rem;
+            padding: 0.25rem 0.75rem;
+        }
+    }
+}
+
+.catagory-posts-wrapper {
+    position: relative;
+    z-index: 1;
+    padding-top: 28px;
+    padding-bottom: 30px;
+}

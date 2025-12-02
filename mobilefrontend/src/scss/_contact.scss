@@ -1,0 +1,21 @@
+/* :: 6.12.0 Contact */
+
+.form-group {
+    label {
+        font-size: 14px;
+    }
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    transition-duration: 500ms;
+    border-color: $border;
+    height: 50px;
+    padding: 0.75rem 1rem;
+    font-size: 14px;
+    background-color: $gray;
+
+    &:focus {
+        box-shadow: none;
+    }
+}

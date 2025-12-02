@@ -1,0 +1,270 @@
+/* :: 6.11.0 Register */
+
+.login-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 10;
+    overflow-y: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+    background-color: $white;
+
+    .success-check {
+        margin: 0 auto;
+
+        i {
+            font-size: 4rem;
+            background: -webkit-linear-gradient($blue, $green);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .btn {
+        border-radius: 5rem;
+    }
+
+    .login-shape img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -10;
+    }
+
+    .login-shape2 img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -10;
+    }
+}
+
+.login-text {
+    position: relative;
+    z-index: 1;
+
+    h3 {
+        color: $heading;
+        font-size: 1.375rem;
+        margin-top: 2rem;
+    }
+
+    .login-img {
+        max-width: 10rem;
+        margin: 0 auto;
+    }
+
+    .shape1 {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border: 8px solid $gray;
+        border-radius: 50%;
+        top: -30%;
+        left: 13%;
+        z-index: -2;
+    }
+
+    .shape2 {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border: 5px solid $green;
+        border-radius: 50%;
+        top: -47%;
+        right: 15%;
+        z-index: -2;
+    }
+
+    .shape3 {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: $blue;
+        border-radius: 50%;
+        top: -21%;
+        right: 46%;
+        z-index: -2;
+    }
+
+    .shape4 {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: $purple;
+        border-radius: 50%;
+        top: 0;
+        right: 0;
+        z-index: -2;
+    }
+
+    .shape5 {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-color: $yellow;
+        border-radius: 50%;
+        bottom: 22%;
+        left: 18%;
+        z-index: -2;
+    }
+
+    .shape6 {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: $border;
+        border-radius: 50%;
+        bottom: 20%;
+        right: 10%;
+        z-index: -2;
+    }
+
+    .shape7 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: $gray;
+        border-radius: 50%;
+        bottom: 65%;
+        left: 5%;
+        z-index: -2;
+    }
+
+    .shape8 {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: $dark;
+        border-radius: 50%;
+        top: 35%;
+        right: 10%;
+        z-index: -2;
+    }
+}
+
+.register-form {
+    position: relative;
+    z-index: 1;
+
+    .form-group {
+        position: relative;
+        z-index: 1;
+    }
+
+    .btn {
+        border-radius: 0.5rem;
+    }
+
+    span {
+        font-size: 12px;
+        display: block;
+    }
+
+    form>.form-group>label {
+        position: absolute;
+        text-align: center;
+        z-index: 100;
+        right: 1.5rem;
+        font-size: 14px;
+        margin-bottom: 0;
+        top: 10px;
+        height: 30px;
+        border-radius: 50%;
+        color: $primary;
+
+        i {
+            line-height: 30px;
+        }
+    }
+
+    .form-control {
+        border-radius: 0.5rem;
+        border: 2px solid $gray;
+        font-size: 13px;
+        font-weight: 300;
+        height: 50px;
+        padding: 0.5rem 1.5rem;
+        background-color: $gray;
+
+        &:focus {
+            border-color: $primary;
+        }
+    }
+
+    .progress {
+        width: calc(100% - 0.5rem);
+        height: 3px;
+        border-radius: 1rem;
+        margin: 1rem 0.25rem 0.25rem;
+        background-color: $gray;
+    }
+
+    .password-score {
+        font-size: 12px;
+        font-weight: 500;
+        display: flex;
+        margin-left: 0.25rem;
+    }
+
+    .password-recommendation {
+        display: none !important;
+    }
+
+    #password-recommendation-heading {
+        font-weight: 700;
+        color: $green;
+        font-size: 16px;
+    }
+}
+
+.login-meta-data {
+    a {
+        font-size: 14px;
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+
+    p {
+        a {
+
+            &:hover,
+            &:focus {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.change-password-card {
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: $white;
+    border-radius: 0.75rem;
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    span {
+        font-size: 13px;
+        margin-bottom: 0.375rem;
+        display: block;
+    }
+
+    .form-control {
+        height: 35px;
+        background-color: $white;
+
+        &:focus {
+            border-color: $blue;
+        }
+    }
+}

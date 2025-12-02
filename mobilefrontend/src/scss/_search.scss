@@ -1,0 +1,123 @@
+/* :: 6.10.0 Search */
+
+.search-post-wrapper {
+    @include bg-gradient;
+    position: relative;
+    z-index: 1;
+    padding-top: 2.125rem;
+    padding-bottom: 2.5rem;
+    overflow: hidden;
+
+    h4 {
+        font-weight: 300;
+        font-size: 1.75rem;
+    }
+
+    .shape1 {
+        position: absolute;
+        z-index: -5;
+        width: 500px;
+        height: 500px;
+        border: 1px solid rgba(255, 175, 0, 0.5);
+        border-radius: 50%;
+        top: -300px;
+        right: -250px;
+        transition-duration: 500ms;
+    }
+
+    .shape2 {
+        position: absolute;
+        z-index: -5;
+        width: 500px;
+        height: 500px;
+        border: 1px solid rgba(255, 175, 0, 0.5);
+        border-radius: 50%;
+        top: -350px;
+        right: -300px;
+    }
+
+    .shape3 {
+        position: absolute;
+        z-index: -5;
+        width: 500px;
+        height: 500px;
+        border: 1px solid rgba(255, 175, 0, 0.5);
+        border-radius: 50%;
+        top: -400px;
+        right: -350px;
+    }
+
+    .shape4 {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: -5;
+        border: 20px solid $yellow;
+        border-radius: 50%;
+        left: -3rem;
+        bottom: -2rem;
+    }
+
+    .shape5 {
+        width: 160px;
+        height: 160px;
+        position: absolute;
+        z-index: -5;
+        border: 1px solid rgba(255, 175, 0, 0.5);
+        border-radius: 50%;
+        bottom: -80px;
+        left: -80px;
+    }
+}
+
+.search-page-form {
+    position: relative;
+    z-index: 1;
+
+    .search-via-voice {
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1.25rem;
+        color: $blue;
+        font-size: 1.25rem;
+    }
+
+    form {
+        position: relative;
+        z-index: 1;
+
+        input {
+            background-color: $white;
+            border: 0;
+            border-radius: 3rem;
+            padding-left: 3rem;
+            box-shadow: 0 2px 2px 0 rgba(16, 13, 209, 0.175);
+            font-size: 13px;
+
+            &:focus {
+                box-shadow: 0 2px 2px 0 rgba(16, 13, 209, 0.175);
+            }
+        }
+
+        button {
+            position: absolute;
+            border: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            background-color: transparent;
+            outline: none;
+            color: $primary;
+
+            i {
+                line-height: 40px;
+            }
+        }
+    }
+}
